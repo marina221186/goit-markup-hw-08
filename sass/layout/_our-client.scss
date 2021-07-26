@@ -1,0 +1,49 @@
+.our-client {
+  margin-bottom: 94px;
+}
+.client-link {
+  @include heightType (170px, 92px);
+
+  &:not(:last-child) {
+   margin-right: 30px;
+  }
+}
+.client-name {
+  @include sabTaitle (1.17, 0.03em, 36px);
+  text-align: center;
+  color: var(--text-accent-color);
+  margin-bottom: 50px;
+}
+.client-type {
+  display: flex;
+}
+
+.client-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include heightType (170px,92px);
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+
+  &:hover,
+  &:focus {
+   border-color: var(--accent-color);
+   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &:hover .client-svg,
+  &:focus .client-svg {
+    fill: var(--accent-color);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.client-svg {
+  background-position: 16px 32px;
+  height: 41px;
+  justify-content: center;
+  align-items: center;
+  fill: #afb1b8;
+}

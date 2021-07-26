@@ -1,0 +1,31 @@
+.footer-link-box-third{
+  @include sabTaitle (1.14, 0.03em, 14px,none);
+  text-transform: uppercase;
+  color: #ffff;
+}
+.footer-form{
+  display: flex;
+}
+.footer-form-input{
+  @include heightType (385px, 50px, #fff);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  margin-right: 12px;
+  background-color:  #2F303A;
+
+  &:hover,
+  &:focus{
+   border-color: var(--accent-color);
+ }
+  &::placeholder{
+    @include sabTaitle (20px, 0.03em, 16px, none);
+    @include heightType (47px, 20px, #FFFFFF99);
+   padding-left: 16px;
+   padding-top: 15px ;
+   padding-bottom: 15px;
+   font-family:var(--main-font);
+ }
+}
+

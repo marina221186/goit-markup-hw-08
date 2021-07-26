@@ -1,0 +1,19 @@
+.work-item {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.work-picture {
+  @include heightType (370px, 294px);
+  left: 615px;
+  top: 1061px;
+  border-radius: 0px;
+}
+.work-img {
+  display: flex;
+}
+.work-img-picture + .work-img-picture {
+  margin-left: 30px;
+}
+.work-img-picture-item {
+  position: relative;
+}

@@ -1,0 +1,35 @@
+.reature {
+  padding-top: 94px;
+}     
+.reature__type {
+  display: flex;
+}
+
+.reature__name {
+  @include sabTaitle (1.14, 0.03em, 14px);
+  text-align: left;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  color: var(--text-accent-color);
+}
+.reature__text {
+  @include sabTaitle (1.71, 0.03em,14px,400);
+  text-align: left;
+  color: #757575;
+}
+.reature__item {
+  width: 270px;
+
+     + .reature__item {
+     margin-left: 30px;
+  }
+}
+.reature__jpg {
+  @include heightType (270px, 120px);
+  background-color: #f5f4fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}

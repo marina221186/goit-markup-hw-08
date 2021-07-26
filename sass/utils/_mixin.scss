@@ -1,0 +1,11 @@
+@mixin sabTaitle ($lh, $ls:0.03em, $fs:14px, $fw) {
+  line-height: $lh ;
+  letter-spacing: $ls; 
+  font-size: $fs;
+  font-weight: $fw;
+}
+@mixin heightType ($wth, $ht, $color) {
+    width: $wth;
+    height: $ht;
+    color: $color;
+}

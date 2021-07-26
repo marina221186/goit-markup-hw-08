@@ -1,0 +1,16 @@
+.label {
+  position: absolute;
+  @include heightType (370px, 70px, #ffffff);
+  left: 0;
+  top: 0;
+  background: rgba(47, 48, 58, 0.8);
+  padding-top: 27px;
+  padding-left: 91px;
+
+  font-family: var(--main-font);
+  font-style: normal;
+  @include sabTaitle (16px, 0.03em, 14px, bold);
+  text-transform: uppercase;
+
+  transform: translateY(320%);
+}

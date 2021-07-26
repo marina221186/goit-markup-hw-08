@@ -1,0 +1,112 @@
+.modal {
+  position: absolute;
+  padding: 40px;
+  top: 50%;
+  left: 50%;
+  @include heightType (528px, 581px);
+  background-color: #ffffff;
+  transform: translate(-50%, -50%);
+}
+.modal-form-titel{
+  font-family: Roboto;
+ font-style: normal;
+ @include sabTaitle (23px, 0.03em, 20px, bold);
+ text-align: center;
+ color: #212121;
+ text-align: center;
+ margin-bottom: 12px;
+}
+.modal-form-icon{
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+
+}
+.modal-form-name{
+  position: relative;
+  margin-bottom: 10px;
+}
+.modal-form-input{
+  @include heightType (100%, 40px);
+  border: 1px solid var(--modal-form-input);
+ border-radius: 4px;
+ padding-left: 42px;
+ outline: none;
+
+  &:hover,
+  &:focus{
+    border-color: var(--accent-color);
+  }
+  &:hover +.modal-form-icon,
+  &:focus +.modal-form-icon{
+    fill: var(--accent-color);
+  }
+}
+
+.modal-form-label{
+  font-family:var(--main-font);
+ font-style: normal;
+ @include sabTaitle (14px, 0.01em, 12px, normal);
+ color: #757575;
+ margin-bottom: 4px;
+ display: block;
+}
+
+.modal-form-textarea{
+  @include heightType (100%, 120px);
+  border: 1px solid var(--modal-form-input);
+  border-radius: 4px;
+  resize: none;
+  padding: 12px 16px;
+  outline: none;
+  margin-bottom: 20px;
+   
+  &::placeholder{
+    font-family:var(--main-font);
+    @include sabTaitle (16px, 0.01em,14px);
+    color: var(--textarea);
+ }
+  &:focus,
+  &:focus{
+    border-color: var(--accent-color);
+ }
+}
+
+.checkbox-box{
+  @include heightType (16px, 15px);
+ border: 2px solid var(--text-accent-color);
+ display: block;
+ border-radius: 2px;
+ margin-right: 8px;
+
+}
+.checkbox-input{
+  
+  &:focus+.checkbox-box{
+   border-color: var(--accent-color);
+  }
+  &:checked +.checkbox-box{
+   background-color: var(--accent-color);
+   background-image: url(../imges/modal/vector-3.svg);
+   border-color: transparent;
+   background-repeat: no-repeat;
+   background-position:center ;
+   background-origin: border-box;
+ }
+}
+
+.modal-checkbox-text{
+  display: flex;
+  margin-bottom: 30px;
+  align-items: center;
+}
+.item-text-checkbox-box{
+  font-family:var(--main-font);
+  @include sabTaitle (24px, 0.03em, 14px);
+ color: #757575;
+}
+.text-checkbox-box{
+  color: var(--accent-color);
+  align-items: stretch;
+}

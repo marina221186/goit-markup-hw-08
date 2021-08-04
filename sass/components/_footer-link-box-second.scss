@@ -1,6 +1,32 @@
-.footer-link-box-second {
-  @include sabTaitle (1.14, 0.03em, 14px, none);
+/*.footer-link-box-second {
+  @include sabTaitle (1.14, 0.03em, 14px,0px);
   text-transform: uppercase;
   color: #ffff;
   margin-right: 93px;
+}*/
+@media screen and (min-width:480px){
+ .footer-link-box-second{
+   margin-top: 60px;
+ }
+ .footer-name {
+   @include sabTaitle (1.14, 0.03em, 14px, 700);
+   text-transform: uppercase;
+   color: #ffff;
+   margin-bottom: 20px;
+   text-align: center;
+  }
+}  
+@media screen and (min-width: 768px){
+ .footer-link-box-second{
+   margin-top: 20px;
+ }
+ 
 }
+
+@media screen and (min-width: 1200px){
+  .footer-link-box-second{
+   margin-top: 93px;
+ }
+  
+}
+  

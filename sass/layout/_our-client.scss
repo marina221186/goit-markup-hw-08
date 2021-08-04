@@ -1,28 +1,87 @@
-.our-client {
+/*.our-client {
   margin-bottom: 94px;
+}*/
+
+@media screen and (min-width:480px){
+  .our-client {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .client-type {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+  }
+  .client-link {
+    width: 210px;
+    height: 92px;
+    flex-basis: calc((100% - 60px) / 2);
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+ 
 }
-.client-link {
-  @include heightType (170px, 92px);
+@media screen and (min-width: 768px){
+ .client-link {
+    width: 226px;
+    flex-basis: calc((100% - 90px) / 32);
+  }
+  /*.client-item{
+    width: 226px;
+  }*/
+}
+@media screen and (min-width: 1200px){
+  .our-client {
+    padding-top: 95px;
+    padding-bottom: 95px;
+    margin-bottom: 94px;
+  }
+  .client-item{
+    width: 170px;
+  }
+  .client-link{
+   width: 170px;
+   height: 92px;
+   flex-basis: calc((100% - 90px) / 32);
+
+    &:not(:last-child) {
+     margin-right: 30px;
+    }
+  }
+  .client-type{
+    flex-wrap: nowrap;
+  }
+  
+}
+
+
+/*.client-link {
+  width: 170px;
+  height: 92px;
 
   &:not(:last-child) {
    margin-right: 30px;
   }
 }
 .client-name {
-  @include sabTaitle (1.17, 0.03em, 36px);
+  @include sabTaitle (1.17, 0.03em, 36px,0px);
   text-align: center;
   color: var(--text-accent-color);
   margin-bottom: 50px;
 }
 .client-type {
   display: flex;
-}
+}*/
 
 .client-item {
   display: flex;
   justify-content: center;
   align-items: center;
-  @include heightType (170px,92px);
+  width: 210px;
+  height: 92px;
+
   border: 1px solid #afb1b8;
   border-radius: 4px;
 

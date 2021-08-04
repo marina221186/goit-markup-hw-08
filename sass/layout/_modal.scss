@@ -3,14 +3,15 @@
   padding: 40px;
   top: 50%;
   left: 50%;
-  @include heightType (528px, 581px);
+  width: 450px;
+  height: 609px;
   background-color: #ffffff;
   transform: translate(-50%, -50%);
 }
 .modal-form-titel{
-  font-family: Roboto;
+  font-family: var(--main-font);
  font-style: normal;
- @include sabTaitle (23px, 0.03em, 20px, bold);
+ @include sabTaitle (23px, 0.03em, 20px,700);
  text-align: center;
  color: #212121;
  text-align: center;
@@ -28,7 +29,8 @@
   margin-bottom: 10px;
 }
 .modal-form-input{
-  @include heightType (100%, 40px);
+  width: 100%;
+  height: 40px;
   border: 1px solid var(--modal-form-input);
  border-radius: 4px;
  padding-left: 42px;
@@ -47,14 +49,15 @@
 .modal-form-label{
   font-family:var(--main-font);
  font-style: normal;
- @include sabTaitle (14px, 0.01em, 12px, normal);
+ @include sabTaitle (14px, 0.01em, 12px, 400);
  color: #757575;
  margin-bottom: 4px;
  display: block;
 }
 
 .modal-form-textarea{
-  @include heightType (100%, 120px);
+  width: 100%;
+  height: 120px;
   border: 1px solid var(--modal-form-input);
   border-radius: 4px;
   resize: none;
@@ -64,7 +67,7 @@
    
   &::placeholder{
     font-family:var(--main-font);
-    @include sabTaitle (16px, 0.01em,14px);
+    @include sabTaitle (16px, 0.01em,14px,0px);
     color: var(--textarea);
  }
   &:focus,
@@ -74,7 +77,8 @@
 }
 
 .checkbox-box{
-  @include heightType (16px, 15px);
+  width:16px ;
+  height: 15px;
  border: 2px solid var(--text-accent-color);
  display: block;
  border-radius: 2px;
@@ -99,14 +103,27 @@
 .modal-checkbox-text{
   display: flex;
   margin-bottom: 30px;
-  align-items: center;
+  //align-items: center;
 }
 .item-text-checkbox-box{
   font-family:var(--main-font);
-  @include sabTaitle (24px, 0.03em, 14px);
- color: #757575;
+  @include sabTaitle (1.17, 0.03em, 12px,0px);
+  color: #757575;
+ 
 }
 .text-checkbox-box{
   color: var(--accent-color);
   align-items: stretch;
+}
+@media screen and (min-width: 1200px){
+  .modal{
+    width: 528px ;
+    height: 581px;
+  }
+  .modal-checkbox-text{
+    align-items: center;
+  }
+  .item-text-checkbox-box{
+    @include sabTaitle (1.71, 0.03em, 14px,0px);
+  }
 }

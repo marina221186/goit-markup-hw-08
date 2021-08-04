@@ -1,13 +1,49 @@
 .container {
-  width: 1200px;
-  margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
 }
-.container__box {
- display: flex;
- align-items: baseline;
+/*@media not all, screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px){
+ .reature {*/
+//400+
+@media screen and (min-width:480px) {
+  .container {
+   width: 480px;
+   margin: 0 auto;
+  }
+  /*.conteiner__box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }*/
+}
+//768+
+@media screen and (min-width:768px) {
+  .container {
+   width: 768px;
+  }
+  /*.conteiner__box {
+    display: flex;
+    flex-direction: row;
+    //align-items: baseline;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }*/
 } 
+//1200+
+@media screen and (min-width:1200px) {
+  .container {
+   width: 1200px;
+  }
+  /*.conteiner__box{
+     flex-direction: row;
+    align-items: baseline;
+  }*/
+}
+
+//.container__box {
+ //display: flex;
+ //align-items: baseline;
+//} 
 .container__box-footer {
   display: block;
 }        

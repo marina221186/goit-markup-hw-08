@@ -1,6 +1,19 @@
-.title {
-  @include sabTaitle (1.17, 0.03em, 36px,);
+/*.title {
+  @include sabTaitle (1.17, 0.03em, 36px,0px);
   text-align: center;
   color: var(--text-accent-color);
+  margin-bottom: 50px;
+}*/
+.title {
+  @include sabTaitle (1.18, 0.03em, 28px,0px);
+  text-align: center;
+  color: var(--text-accent-color);
+  margin-bottom: 30px;
+  font-family:var(--main-font);
+}
+
+
+@media screen and (min-width: 1200px){
+  @include sabTaitle (1.18, 0.03em, 36px,0px);
   margin-bottom: 50px;
 }

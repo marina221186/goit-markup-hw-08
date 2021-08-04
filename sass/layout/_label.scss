@@ -9,7 +9,7 @@
 
   font-family: var(--main-font);
   font-style: normal;
-  @include sabTaitle (16px, 0.03em, 14px, bold);
+  @include sabTaitle (16px, 0.03em, 14px,700);
   text-transform: uppercase;
 
   transform: translateY(320%);

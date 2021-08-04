@@ -35,6 +35,11 @@
                     </li>
                 </ul>
             </nav>
+            <button class="burger-btn" data-menu-open>
+                <svg class="burger-btn__icon">
+                    <use href="./imges/vector/symbol-defs.svg#burger-icom"></use>
+                </svg>
+            </button>
             <ul class="menu-info list">
                 <li class="menu-info__type ">
                     <a class="menu-info__address link" href="mailto:info@devstudio.com">
@@ -52,6 +57,53 @@
                 </li>
             </ul>
         </div>
+        <div class="mobile-menu" data-menu>
+            <div class="conteiner mobile-menu__conteiner">
+                <button class="close-btn-type mobile-menu__close-btn-type" data-menu-close>
+                    <svg class="close-btn-type__icon">
+                        <use href="./imges/vector/symbol-defs.svg#icon-vector" width="19" height="19"></use>
+                    </svg>
+                </button>
+                <ul class="nav-list list">
+                    <li class="nav-list__menu  link">
+                        <a href="" class="nav-list__menu-link">Студия</a>
+                    </li>
+                    <li class="nav-list__menu link">
+                        <a href="" class="nav-list__menu-link">Портфолио</a>
+                    </li>
+                    <li class="nav-list__menu link">
+                        <a href="" class="nav-list__menu-link">Контакты</a>
+                    </li>
+                </ul>
+                <ul class="info-list list">
+                    <li class="info-list__menu">
+                        <a class="info-list__menu-address info-list__menu-address-tel link" href="tel:+380961111111">+38
+                            096 111 11 11</a>
+                    </li>
+                    <li class="info-list__menu">
+                        <a class="info-list__menu-address info-list__menu-address-web link"
+                            href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </li>
+
+                </ul>
+                <ul class="social-list list">
+                    <li class="social-list__menu link ">
+                        <a href="#" class="social-list__link">Instagram</a>
+                    </li>
+                    <li class="social-list__menu link">
+                        <a href="#" class="social-list__link social-list__link--current">Twitter</a>
+                    </li>
+                    <li class="social-list__menu link">
+                        <a href="#" class="social-list__link social-list__link--current">Facebook</a>
+                    </li>
+                    <li class="social-list__menu link">
+                        <a href="#" class="social-list__link social-list__link--current">LinkedIn</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
     </header>
 
     <main class="main-type">
@@ -66,6 +118,7 @@
             <!особености>
 
                 <section class="reature">
+                    <h2 class="visually-hidden">Главное качество</h2>
                     <div class="container container__box">
                         <ul class="reature__type list">
                             <li class="reature__item">
@@ -98,7 +151,8 @@
                                     </svg>
                                 </div>
                                 <h3 class="reature__name">Планирование</h3>
-                                <p class="reature__text">Равным образом консультация с широким активом в значительной
+                                <p class="reature__text">Равным образом консультация с широким активом в
+                                    значительной
                                     степени
                                     обуславливает.</p>
                             </li>
@@ -125,22 +179,41 @@
                             <ul class="work-img list">
                                 <li class="work-img-picture">
                                     <div class="work-img-picture-item">
-                                        <img class="work-picture" src="./imges/work/img4.png" alt="работа за копютером"
-                                            width="370" height="294">
+                                        <picture>
+                                            <source media="(min-width: 1200px)"
+                                                srcset="./imges/work/img4-desctop.webp 1x,./imges/work/img@2x4-desctop.webp 2x"
+                                                type="image/webp">
+                                            <source media="(min-width: 1200px)"
+                                                srcset="./imges/work/img4-desctop.jpg 1x,./imges/work/img@2x4-desctop.jpg 2x">
+                                            <img class="work-picture" src="./imges/work/img4.png"
+                                                alt="работа за копютером">
+                                        </picture>
                                         <p class="label">Десктопные приложения</p>
                                     </div>
                                 </li>
                                 <li class="work-img-picture">
                                     <div class="work-img-picture-item">
-                                        <img class="work-picture" src="./imges/work/img5.png" alt="телефон" width="370"
-                                            height="294">
+                                        <picture>
+                                            <source media="(min-width: 1200px)"
+                                                srcset="./imges/work/img5-desctop.webp 1x,./imges/work/img@2x5-desctop.webp 2x"
+                                                type="image/webp">
+                                            <source media="(min-width: 1200px)"
+                                                srcset="./imges/work/img5-desctop.jpg 1x,./imges/work/img@2x5-desctop.jpg 2x">
+                                            <img class="work-picture" src="./imges/work/img5.png" alt="телефон">
+                                        </picture>
                                         <p class="label">Мобильные приложения</p>
                                     </div>
                                 </li>
                                 <li class="work-img-picture">
                                     <div class="work-img-picture-item">
-                                        <img class="work-picture" src="./imges/work/img6.png" alt="планшет" width="370"
-                                            height="294">
+                                        <picture>
+                                            <source media="(min-width: 1200px)"
+                                                srcset="./imges/work/img6-desctop.webp 1x,./imges/work/img@2x6-desctop.webp 2x"
+                                                type="image/webp">
+                                            <source media="(min-width: 1200px)"
+                                                srcset="./imges/work/img6-desctop.jpg 1x,./imges/work/img@2x6-desctop.jpg 2x">
+                                            <img class="work-picture" src="./imges/work/img6.png" alt="планшет">
+                                        </picture>
                                         <p class="label">Дизайнерские решения</p>
                                     </div>
                                 </li>
@@ -155,8 +228,25 @@
                                 <h2 class="title">Наша команда</h2>
                                 <ul class="team-person list">
                                     <li class="team-item">
-                                        <img class="team-picture" src="./imges/team/img-56.jpg" alt="Product Designer"
-                                            width="270" height="368">
+                                        <picture>
+                                            <source media="(min-width:1200px )"
+                                                srcset="./imges/team/img-desctop56.webp 1x,./imges/team/img@2x-desctop56.webp 2x"
+                                                type="image/webp">
+                                            <source media="(min-width:1200px )"
+                                                srcset="./imges/team/img-desctop56.jpg 1x,./imges/team/img@2x-desctop56.jpg 2x">
+                                            <source media="(min-width:768px )"
+                                                srcset="./imges/team/img-tablet56.webp 1x,./imges/team/img@2x-tablet56.webp 2x"
+                                                type="image/webp">
+                                            <source media="(min-width:768px )"
+                                                srcset="./imges/team/img-tablet56.jpg 1x,./imges/team/img@2x-tablet56.jpg 2x">
+                                            <source media="(min-width:480px )"
+                                                srcset="./imges/team/img-mobile56.webp 1x,./imges/team/img@2x-mobile56.webp 2x"
+                                                type="image/webp">
+                                            <source media="(min-width:480px )"
+                                                srcset="./imges/team/img-mobile56.jpg 1x,./imges/team/img@2x-mobile56.jpg 2x">
+                                            <img class="team-picture" src="./imges/team/img-56.jpg"
+                                                alt="Product Designer">
+                                        </picture>
                                         <div class="item-box">
                                             <h3 class="name-worker">Игорь Демьяненко</h3>
                                             <p class="profession" lang="en">Product Designer</p>
@@ -193,8 +283,26 @@
                                         </div>
                                     </li>
                                     <li class="team-item">
-                                        <img class="team-picture" src="./imges/team/img-53.jpg" alt="Frontend Developer"
-                                            width="270" height="368">
+                                        <picture>
+                                            <source media="(min-width:1200px )"
+                                                srcset="./imges/team/img-desctop53.webp 1x,./imges/team/img@2x-desctop53.webp 2x"
+                                                type="image/webp">
+                                            <source media="(min-width:1200px )"
+                                                srcset="./imges/team/img-desctop53.jpg 1x,./imges/team/img@2x-desctop53.jpg 2x">
+                                            <source media="(min-width:768px )"
+                                                srcset="./imges/team/img-tablet53.webp 1x,./imges/team/img@2x-tablet53.webp 2x"
+                                                type="image/webp">
+                                            <source media="(min-width:768px )"
+                                                srcset="./imges/team/img-tablet53.jpg 1x,./imges/team/img@2x-tablet53.jpg 2x">
+                                            <source media="(min-width:480px )"
+                                                srcset="./imges/team/img-mobile53.webp 1x,./imges/team/img@2x-mobile53.webp 2x"
+                                                type="image/webp">
+                                            <source media="(min-width:480px )"
+                                                srcset="./imges/team/img-mobile53.jpg 1x,./imges/team/img@2x-mobile53.jpg 2x">
+
+                                            <img class="team-picture" src="./imges/team/img-53.jpg"
+                                                alt="Frontend Developer">
+                                        </picture>
                                         <div class="item-box">
                                             <h3 class="name-worker">Ольга Репина</h3>
                                             <p class="profession" lang="en">Frontend Developer</p>
@@ -231,8 +339,25 @@
                                         </div>
                                     </li>
                                     <li class="team-item">
-                                        <img class="team-picture" src="./imges/team/img-54.jpg" alt="Marketing"
-                                            width="270" height="368">
+                                        <picture>
+                                            <source media="(min-width:1200px )"
+                                                srcset="./imges/team/img-desctop54.webp 1x,./imges/team/img@2x-desctop54.webp 2x"
+                                                type="image/webp">
+                                            <source media="(min-width:1200px )"
+                                                srcset="./imges/team/img-desctop54.jpg 1x,./imges/team/img@2x-desctop54.jpg 2x">
+                                            <source media="(min-width:768px )"
+                                                srcset="./imges/team/img-tablet54.webp 1x,./imges/team/img@2x-tablet54.webp 2x"
+                                                type="image/webp">
+                                            <source media="(min-width:768px )"
+                                                srcset="./imges/team/img-tablet54.jpg 1x,./imges/team/img@2x-tablet54.jpg 2x">
+                                            <source media="(min-width:480px )"
+                                                srcset="./imges/team/img-mobile54.webp 1x,./imges/team/img@2x-mobile54.webp 2x"
+                                                type="image/webp">
+                                            <source media="(min-width:480px )"
+                                                srcset="./imges/team/img-mobile54.jpg 1x,./imges/team/img@2x-mobile54.jpg 2x">
+
+                                            <img class="team-picture" src="./imges/team/img-54.jpg" alt="Marketing">
+                                        </picture>
                                         <div class="item-box">
                                             <h3 class="name-worker">Николай Тарасов</h3>
                                             <p class="profession" lang="en">Marketing</p>
@@ -269,8 +394,25 @@
                                         </div>
                                     </li>
                                     <li class="team-item">
-                                        <img class="team-picture" src="./imges/team/img-55.jpg" alt="UI Designer"
-                                            width="270" height="368">
+                                        <picture>
+                                            <source media="(min-width:1200px )"
+                                                srcset="./imges/team/img-desctop55.webp 1x,./imges/team/img@2x-desctop55.webp 2x"
+                                                type="image/webp">
+                                            <source media="(min-width:1200px )"
+                                                srcset="./imges/team/img-desctop55.jpg 1x,./imges/team/img@2x-desctop55.jpg 2x">
+                                            <source media="(min-width:768px )"
+                                                srcset="./imges/team/img-tablet55.webp 1x,./imges/team/img@2x-tablet55.webp 2x"
+                                                type="image/webp">
+                                            <source media="(min-width:768px )"
+                                                srcset="./imges/team/img-tablet55.jpg 1x,./imges/team/img@2x-tablet55.jpg 2x">
+                                            <source media="(min-width:480px )"
+                                                srcset="./imges/team/img-mobile55.webp 1x,./imges/team/img@2x-mobile55.webp 2x"
+                                                type="image/webp">
+                                            <source media="(min-width:480px )"
+                                                srcset="./imges/team/img-mobile55.jpg 1x,./imges/team/img@2x-mobile55.jpg 2x">
+
+                                            <img class="team-picture" src="./imges/team/img-55.jpg" alt="UI Designer">
+                                        </picture>
                                         <div class="item-box">
                                             <h3 class="name-worker">Михаил Ермаков</h3>
                                             <p class="profession" lang="en">UI Designer</p>
@@ -312,8 +454,8 @@
 
                         <!Наши клиенты>
 
-                            <section>
-                                <div class="container our-client">
+                            <section class="our-client">
+                                <div class="container ">
                                     <h2 class="title">Постоянные клиенты</h2>
                                     <ul class="client-type list">
                                         <li class="client-link">
@@ -328,35 +470,40 @@
                                         <li class="client-link">
                                             <a href="" class="client-item">
                                                 <svg class="client-svg" width="40" height="52">
-                                                    <use href="./imges/about-ass/symbol-defs.svg#icon-group-1"></use>
+                                                    <use href="./imges/about-ass/symbol-defs.svg#icon-group-1">
+                                                    </use>
                                                 </svg>
                                             </a>
                                         </li>
                                         <li class="client-link">
                                             <a href="" class="client-item">
                                                 <svg class="client-svg" width="43" height="41">
-                                                    <use href="./imges/about-ass/symbol-defs.svg#icon-group-2"></use>
+                                                    <use href="./imges/about-ass/symbol-defs.svg#icon-group-2">
+                                                    </use>
                                                 </svg>
                                             </a>
                                         </li>
                                         <li class="client-link">
                                             <a href="" class="client-item">
                                                 <svg class="client-svg" width="84" height="41">
-                                                    <use href="./imges/about-ass/symbol-defs.svg#icon-group-3"></use>
+                                                    <use href="./imges/about-ass/symbol-defs.svg#icon-group-3">
+                                                    </use>
                                                 </svg>
                                             </a>
                                         </li>
                                         <li class="client-link">
                                             <a href="" class="client-item">
                                                 <svg class="client-svg" width="63" height="45">
-                                                    <use href="./imges/about-ass/symbol-defs.svg#icon-group-4"></use>
+                                                    <use href="./imges/about-ass/symbol-defs.svg#icon-group-4">
+                                                    </use>
                                                 </svg>
                                             </a>
                                         </li>
                                         <li class="client-link">
                                             <a href="" class="client-item">
                                                 <svg class="client-svg" width="94" height="44">
-                                                    <use href="./imges/about-ass/symbol-defs.svg#icon-group-5"></use>
+                                                    <use href="./imges/about-ass/symbol-defs.svg#icon-group-5">
+                                                    </use>
                                                 </svg>
                                             </a>
                                         </li>
@@ -418,7 +565,7 @@
             <div class="footer-link-box-third">
                 <p class="footer-name">Подпишитесь на рассылку</p>
                 <form action="#" class="footer-form">
-                    <label for="email" class="footer-form-label"></label>
+                    <!--<label for="email" class="footer-form-label"></label>-->
                     <input class="footer-form-input" id="email" type="text"
                         pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" required placeholder="E-mail">
                     <button type="submit" class="footer-form-btn">Подписаться
@@ -481,6 +628,7 @@
             </form>
         </div>
     </div>
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
 </body>
 

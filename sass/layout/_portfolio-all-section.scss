@@ -119,9 +119,14 @@
 /*@media screen and (min-width:480px){
  
 } */
+
 @media screen and (min-width: 768px){
  .filters {
    justify-content: center;
+  }
+  .filter-type:not(:last-child) {
+    margin-right: 8px;
+    margin-bottom: 0px;
   }
  .project {
     flex-direction: row;
@@ -133,10 +138,19 @@
   }
  
   .project-type {
+    display: flex;
    margin-left: 30px;
-   margin-top: 14px;
+   margin-top: 40px;
    width: 354px;
   }
+  .project-item {
+    display: flex;
+    flex-direction: column;
+  }
+  .project-box {
+    flex-grow: 1;
+  }
+
 }
 
 @media screen and (min-width: 1200px){

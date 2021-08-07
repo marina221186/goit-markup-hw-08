@@ -22,16 +22,14 @@
   align-items: center;
 }
 
-.reature__item:not(:last-child){
-  margin-bottom: 30px;
-}
+
 .reature__item {
   width: 450px;
   
-
-     + .reature__item {
-     margin-bottom: 30px;
+  &:not(:last-child){
+   margin-bottom: 30px;
   }
+
 }
 .reature__jpg {
   width: 450px;
@@ -52,8 +50,10 @@
   text-align: center;
 }
 .reature__text{
- @include sabTaitle (1.71, 0.03em, 14px,0px);
+ @include sabTaitle (1.71, 0.03em, 14px,400);
  color: #757575;
+ font-family:var(--main-font);
+
 
 }
 
@@ -111,6 +111,10 @@
     flex-basis: calc((100% - 60px) / 2);
     margin-top: 30px;
     margin-left: 30px;
+    
+    &:not(:last-child){
+      margin-bottom: 0px;
+    }
   }
   .reature__name {
     text-align:left ;
@@ -118,6 +122,9 @@
 }
 
 @media screen and (min-width: 1200px){
+  .reature {
+   padding-top: 94px;
+  }     
   .reature__type {
     display: flex;
     flex-direction: row;
@@ -131,6 +138,9 @@
   }
   .reature__text{
     width: 270px;
+  }
+  .reature__item {
+    width:100%;
   }
 
 }

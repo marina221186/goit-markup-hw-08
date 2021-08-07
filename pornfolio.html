@@ -60,22 +60,24 @@
         </div>
         <div class="mobile-menu" data-menu>
             <div class="conteiner mobile-menu__conteiner">
-                <button class="close-btn-type mobile-menu__close-btn-type" data-menu-close>
+                <button class="mobile-menu__close-btn-type" data-menu-close>
                     <svg class="close-btn-type__icon">
                         <use href="./imges/vector/symbol-defs.svg#icon-vector" width="19" height="19"></use>
                     </svg>
                 </button>
-                <ul class="nav-list list">
-                    <li class="nav-list__menu  link">
-                        <a href="" class="nav-list__menu-link">Студия</a>
-                    </li>
-                    <li class="nav-list__menu link">
-                        <a href="" class="nav-list__menu-link">Портфолио</a>
-                    </li>
-                    <li class="nav-list__menu link">
-                        <a href="" class="nav-list__menu-link">Контакты</a>
-                    </li>
-                </ul>
+                <nav>
+                    <ul class="nav-list list">
+                        <li class="nav-list__menu">
+                            <a href="./index.html" class="nav-list__menu-link--current link">Студия</a>
+                        </li>
+                        <li class="nav-list__menu">
+                            <a href="./index.html" class="nav-list__menu-link link">Портфолио</a>
+                        </li>
+                        <li class="nav-list__menu">
+                            <a href="./index.html" class="nav-list__menu-link link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
                 <ul class="info-list list">
                     <li class="info-list__menu">
                         <a class="info-list__menu-address info-list__menu-address-tel link" href="tel:+380961111111">+38
@@ -88,17 +90,17 @@
 
                 </ul>
                 <ul class="social-list list">
-                    <li class="social-list__menu link ">
-                        <a href="#" class="social-list__link">Instagram</a>
+                    <li class="social-list__menu">
+                        <a href="#" class="social-list__link link">Instagram</a>
                     </li>
-                    <li class="social-list__menu link">
-                        <a href="#" class="social-list__link social-list__link--current">Twitter</a>
+                    <li class="social-list__menu">
+                        <a href="#" class="social-list__link social-list__link--current link">Twitter</a>
                     </li>
-                    <li class="social-list__menu link">
-                        <a href="#" class="social-list__link social-list__link--current">Facebook</a>
+                    <li class="social-list__menu">
+                        <a href="#" class="social-list__link social-list__link--current link">Facebook</a>
                     </li>
-                    <li class="social-list__menu link">
-                        <a href="#" class="social-list__link social-list__link--current">LinkedIn</a>
+                    <li class="social-list__menu">
+                        <a href="#" class="social-list__link social-list__link--current link">LinkedIn</a>
                     </li>
 
                 </ul>
@@ -428,7 +430,7 @@
 
     <footer class="footer-link">
         <div class="container container__box">
-            <div class="container__box-footer footer-block">
+            <div class="footer-link-box-one footer-block">
                 <nav class="navigation__footer">
                     <a class="logo link" href="./index.html">Web<span class="logo__letter--footer">Studio</span></a>
                     <ul class="navigation__type list">
@@ -447,7 +449,7 @@
                     </ul>
                 </nav>
             </div>
-            <div class="box-work-item">
+            <div class="footer-link-box-second">
                 <p class="footer-name">Присоединяйтесь</p>
                 <ul class="web-item web-item__footer">
                     <li class="web-address list">

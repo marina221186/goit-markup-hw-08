@@ -20,7 +20,10 @@
     background: #ffff;
     box-shadow: 0px 4px 4px 0px #00000040;
     border-radius: 0px 0px 4px 4px;
-
+         
+    &:not(:last-child){
+      margin-bottom: 30px;
+    }
   }
   
   .team-box {
@@ -40,12 +43,12 @@
   }
   .web-item {
    display: flex;
-   width: 206px;
-   justify-content: space-between;
+   justify-content: center;
    padding-top: 20px;
    padding-bottom: 24px;
    align-items: center;
    margin: 0 auto;
+
   }
   .web-icon {
     width: 44px ;
@@ -84,13 +87,28 @@
     border-radius: 50%;
     fill: #afb1b8;
   }
+  .web-item__footer{
+    padding-top: 0;
+  }
+
+  .icon-footer {
+   background-color: rgba(255, 255, 255, 0.1);
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  .web-icon-top-footer {
+    fill: #ffffff;
+  }
+  .web-address:not(:last-child){
+   margin-right: 10px;
+  
+  }
  
 }
 
 @media screen and (min-width: 768px){
  .our-team{
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 94px;
+    padding-bottom: 94px;
     background-color: #f5f4fa;
   }
   .team-person {
@@ -103,6 +121,11 @@
     flex-basis: calc((100% - 60px) / 2);
     margin-top: 30px;
     margin-left: 30px;
+
+    &:not(:last-child){
+      margin-bottom: 0px;
+    }
+
     
   }
   .team-box {
@@ -111,15 +134,19 @@
 }
 
 @media screen and (min-width: 1200px){
+  .container__box{
+    display: flex;
+  }
  .our-team {
    background-color: #f5f4fa;
-   margin-bottom: 29px;
+   //margin-bottom: 29px;
    padding-top: 94px;
+   padding-bottom: 90px;
   }
   .team-person {
    display: flex;
    flex-wrap: nowrap;
-   padding-bottom: 90px;
+   //padding-bottom: 90px;
   }
   .team-item {
     flex-basis: calc((100% - 60px) / 4);

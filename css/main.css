@@ -118,10 +118,9 @@ body {
   margin-right: 93px;
 }
 
-.navigation__type {
+/*.navigation__type {
   margin-top: 20px;
-}
-
+}*/
 .navigation__footer {
   display: block;
   align-items: center;
@@ -134,8 +133,8 @@ body {
   letter-spacing: 0.03em;
   text-align: left;
   color: var(--accent-color);
-  padding-top: 24px;
-  padding-bottom: 25px;
+  margin-top: 26px;
+  margin-bottom: 26px;
 }
 
 .logo__letter {
@@ -663,6 +662,7 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 60px;
   }
   .logo {
     font-family: var(--secondary-font);
@@ -671,14 +671,12 @@ body {
     letter-spacing: 0.03em;
     text-align: center;
     color: var(--accent-color);
-    padding-top: 24px;
-    padding-bottom: 25px;
+    margin-bottom: 26px;
   }
   .navigation-type-address + .navigation-type-address {
     margin-top: 9px;
   }
   .navigation__type {
-    margin-top: 20px;
     text-align: center;
   }
   .type-address {
@@ -707,8 +705,6 @@ body {
     justify-content: space-around;
   }
   .navigation__type {
-    margin-bottom: 60px;
-    margin-top: 20px;
     text-align: center;
   }
 }
@@ -755,7 +751,6 @@ body {
 @media screen and (min-width: 480px) {
   .footer-link-box-second {
     margin-top: 60px;
-    margin-bottom: 60px;
   }
   .footer-name {
     line-height: 1.14;
@@ -774,12 +769,6 @@ body {
   .web-icon-top-footer {
     fill: #ffffff;
   }*/
-}
-
-@media screen and (min-width: 768px) {
-  .footer-link-box-second {
-    margin-top: 20px;
-  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -834,6 +823,7 @@ body {
     text-transform: uppercase;
     color: #ffff;
     margin: 0 auto;
+    margin-top: 60px;
   }
   .footer-form {
     display: block;
@@ -970,118 +960,59 @@ body {
   cursor: pointer;
 }
 
-@media not all, screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
+.hero {
+  background-color: #c4c4c4;
+  max-width: 1600px;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  text-align: center;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../imges/hero/bg-mobile.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+@media (min-divice-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../imges/hero/bg-mobile.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../imges/hero/bg-mobile@2x.jpg);
   }
 }
 
-@media screen and (min-width: 480px) {
-  .hero {
-    width: 480px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../imges/hero/bg-mobile.jpg);
-    background-color: rgba(47, 48, 58, 0.4);
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    padding-top: 118px;
-    padding-bottom: 118px;
-    margin: 0 auto;
-  }
-  .hero__type {
-    margin-bottom: 30px;
-    margin: 0 auto;
-    max-width: 360px;
-    font-size: 24px;
-    line-height: 1.4;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: #fff;
-  }
+.hero__type {
+  margin-bottom: 30px;
+  margin: 0 auto;
+  line-height: 1.4;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #fff;
 }
 
 @media screen and (min-width: 768px) {
   .hero {
-    width: 768px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../imges/hero/bg-tablet.jpg);
-    background-color: rgba(47, 48, 58, 0.4);
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    padding-top: 118px;
-    padding-bottom: 118px;
-    margin: 0 auto;
   }
-  .hero__type {
-    margin-bottom: 30px;
-    margin: 0 auto;
-    max-width: 360px;
-    font-size: 24px;
-    line-height: 1.4;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: #fff;
+}
+
+@media (min-divice-pixel-ratio: 2) and (min-width: 768px), (min-resolution: 192dpi) and (min-width: 768px), (min-resolution: 2dppx) and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../imges/hero/bg-tablet@2x.jpg);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .hero {
-    max-width: 1600px;
     padding-top: 200px;
     padding-bottom: 200px;
-    width: 1200px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../imges/hero/bg-desctop.jpg);
-    background-color: rgba(47, 48, 58, 0.4);
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    margin: 0 auto;
-  }
-  .hero__type {
-    margin-bottom: 30px;
-    margin: 0 auto;
-    line-height: 1.4;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: #fff;
   }
 }
 
-/*.hero__type {
-    margin-bottom: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 360px;
-    font-size: 24px;
-    line-height: 1.4;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: #fff;
-}*/
-/*.hero {
-  background-color: rgba(47, 48, 58, 0.4);
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  padding-top: 118px;
-  padding-bottom: 118px;
-  margin-left: auto;
-  margin-right: auto;
+@media (min-divice-pixel-ratio: 2) and (min-width: 1200px), (min-resolution: 192dpi) and (min-width: 1200px), (min-resolution: 2dppx) and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../imges/hero/bg@2x-desctop.jpg);
+  }
+}
 
-  /*text-align: center;
-  //background-image: linear-gradient(
-   //rgba(47, 48, 58, 0.4),
-   //rgba(47, 48, 58, 0.4),
-   //url(../imges/hero/bg.jpg);
-  background-size: cover;*/
-/*.hero__type {
-  @include sabTaitle (1.61, 0.06em, 26px, 900);
-  @include heightType ( 360px, 84px,#ffffff);
-  text-align: center;
-  text-transform: uppercase;
-  //margin: 0 auto;
-  //margin-bottom: 30px;
-}*/
 /*.model-btn{
   font-family: inherit;
   @include sabTaitle (1.88, 0.06em, 16px,0px);
@@ -1645,10 +1576,8 @@ body {
   .client-link {
     height: 92px;
     flex-basis: calc((100% - 90px) / 6);
-    margin-top: 0px;
+    margin-top: 30px;
     margin-left: 0px;
-  }
-  .client-link:not(:last-child) {
     margin-right: 30px;
   }
   .client-type {

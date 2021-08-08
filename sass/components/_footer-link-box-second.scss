@@ -8,7 +8,7 @@
 @media screen and (min-width:480px){
  .footer-link-box-second{
    margin-top: 60px;
-   margin-bottom: 60px;
+   //margin-bottom: 60px;
  }
  .footer-name {
    @include sabTaitle (1.14, 0.03em, 14px, 700);
@@ -26,9 +26,9 @@
   }*/
 }  
 @media screen and (min-width: 768px){
- .footer-link-box-second{
-   margin-top: 20px;
- }
+ //.footer-link-box-second{
+  // margin-top: 20px;
+ //}
  
 }
 

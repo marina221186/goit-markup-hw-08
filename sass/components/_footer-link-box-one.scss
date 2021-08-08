@@ -25,6 +25,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 60px;
   }
   
   .logo {
@@ -34,15 +35,17 @@
     letter-spacing: 0.03em;
     text-align: center;
     color: var(--accent-color);
-    padding-top: 24px;
-    padding-bottom: 25px;
+    //padding-top: 24px;
+    margin-bottom: 26px;
     //margin-right: 93px;
+
   }
+ 
   .navigation-type-address + .navigation-type-address {
     margin-top: 9px;
   }
   .navigation__type {
-   margin-top: 20px;
+   //margin-top: 20px;
    text-align: center;
   }
   .type-address{
@@ -75,8 +78,7 @@
     justify-content: space-around;
  }
  .navigation__type {
-   margin-bottom: 60px;
-   margin-top: 20px;
+  // margin-bottom: 60px;
    text-align: center;
   }
 }
